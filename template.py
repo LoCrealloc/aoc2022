@@ -6,7 +6,9 @@ import pyperclip
 
 import aoc
 import re
-from collections import deque
+from collections import deque, Counter
+from utils import find_ints
+
 
 def ans(answer):
     print(answer)
@@ -20,4 +22,4 @@ puzzle = aoc.setup(year, day, show_title=False, f="input.txt")
 
 
 
-ans()
+ans(res)
