@@ -1,5 +1,6 @@
 import aoc
 from functools import cmp_to_key
+from ast import literal_eval
 
 
 year, day = 2022, 13
@@ -46,7 +47,7 @@ def part_1():
             if line == "":
                 continue
 
-            pair[j] = eval(line)
+            pair[j] = literal_eval(line)
 
         puzzle[i] = pair
 
@@ -66,7 +67,7 @@ def part_2():
         if line == "":
             continue
 
-        puzzle.append(eval(line))
+        puzzle.append(literal_eval(line))
 
     puzzle.append([[2]])
     puzzle.append([[6]])
